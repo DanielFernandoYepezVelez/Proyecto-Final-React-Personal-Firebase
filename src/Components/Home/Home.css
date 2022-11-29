@@ -1,0 +1,7 @@
+.banner {
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/one-direction-with-fans-7ar9saj1wpv9mkmb-7ar9saj1wpv9mkmb.jpg?alt=media&token=a7834667-2a11-439c-a814-50d441ddf8eb);
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30%;
+}
