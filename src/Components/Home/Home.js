@@ -1,5 +1,8 @@
 import './Home.css';
 
+// Components
+import { Footer } from '../../shared/Footer/Footer';
+
 export function Home() {
     return (
         <>
@@ -48,6 +51,48 @@ export function Home() {
                                     <p class="m-0">JULY 29</p>
                                 </div>
                             </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-vinyl-fill fs-1"></i>
+                                <div class="ms-2 d-flex flex-column">
+                                    <p class="m-0">Cartagena</p>
+                                    <p class="m-0">APRIL 10</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-vinyl-fill fs-1"></i>
+                                <div class="ms-2 d-flex flex-column">
+                                    <p class="m-0">Guajira</p>
+                                    <p class="m-0">MAY 22</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-vinyl-fill fs-1"></i>
+                                <div class="ms-2 d-flex flex-column">
+                                    <p class="m-0">San Andres</p>
+                                    <p class="m-0">JANUARY 30</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-vinyl-fill fs-1"></i>
+                                <div class="ms-2 d-flex flex-column">
+                                    <p class="m-0">Santa Marta</p>
+                                    <p class="m-0">FEBRUARY 29</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-vinyl-fill fs-1"></i>
+                                <div class="ms-2 d-flex flex-column">
+                                    <p class="m-0">Bucaramanga</p>
+                                    <p class="m-0">SEPTEMBER 03</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-vinyl-fill fs-1"></i>
+                                <div class="ms-2 d-flex flex-column">
+                                    <p class="m-0">Pereira</p>
+                                    <p class="m-0">DECEMBER 31</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -66,6 +111,7 @@ export function Home() {
                     </div>
                 </div>
             </section>
+            <Footer />
         </>
     )
 

@@ -1,32 +1,31 @@
+import { Link } from "react-router-dom";
+
+import './Menu.css'
+
 export function Menu() {
     return (
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <nav class="navbar navbar-expand-lg menu navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand">Navbar</a>
+                <Link class="navbar-brand" to="/">One Direction</Link>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page">Home</a>
+                            <Link class="nav-link active" aria-current="page" to="/home">Home</Link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item">Action</a></li>
-                                <li><a class="dropdown-item">Another action</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item">Something else here</a></li>
-                            </ul>
+                            <Link class="nav-link" to="/history">Historia</Link>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
+                            <Link class="nav-link" to="/members">Integrantes</Link>
+                        </li>
+                        <li class="nav-item">
+                            <Link class="nav-link" to="/music">Musica</Link>
+                        </li>
+                        <li class="nav-item">
+                            <Link class="nav-link" to="/albums">Albumes</Link>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
