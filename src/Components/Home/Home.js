@@ -99,19 +99,35 @@ export function Home() {
             </section>
             <section>
                 <div class="container-fluid mt-5">
+                    <div className='row'>
+                        <div className='col-12'>
+                            <h1 className='text-center'>NOTICIAS</h1>
+                            <hr />
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <img src='https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/000242640W.jpg?alt=media&token=1be6134d-ab0a-4298-9d8e-655560888541' alt='ImageLeft' class="img-fluid w-100" />
+                            <p>
+                                concierto en el estadio atanasio giradot, con pantallas gigantes para disfrutar
+                                en familia. 
+                            </p>
                         </div>
                         <div class="col-12 col-md-4">
                             <img src='https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/EWfEI8TWoAMrXRe.jpg?alt=media&token=fa2bcecb-d493-495b-bbbc-7be24d6b0b2c' alt='ImageCenter' class="img-fluid w-100" />
+                            <p>
+                                concierto en el movistar arena en bogota 2 horas continuas para toda disfrutar en familia. 
+                            </p>
                         </div><div class="col-12 col-md-4">
                             <img src='https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/MFYzjH1BOe0G7okKcZ5fG1.webp?alt=media&token=52b31832-a6aa-45a3-9f39-ca9d93527948' alt='ImageRight' class="img-fluid w-100" />
+                            <p>
+                                concierto en barcelona de one direction para toda disfrutar en familia. 
+                            </p>
                         </div>
                     </div>
                 </div>
             </section>
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 

@@ -1,3 +1,10 @@
 .footer {
+    /* display: flex; */
+    margin-top: 2rem;
+    /* justify-content: center; */
     background-color: rgb(106, 48, 153);
+}
+
+.font {
+    font-size: 4rem;
 }
