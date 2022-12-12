@@ -1,7 +1,1079 @@
+/* PARA PONER UNA IMAGEN GRANDE DE BACKGROUND
 .banner {
     background-image: url(https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/one-direction-with-fans-7ar9saj1wpv9mkmb-7ar9saj1wpv9mkmb.jpg?alt=media&token=a7834667-2a11-439c-a814-50d441ddf8eb);
     background-position: top center;
     background-size: cover;
     background-attachment: fixed;
     padding: 30%;
+} */
+
+.main__container {
+    gap: 3rem;
+    display: flex;
+    padding: 2rem;
+    margin: 5rem auto;
+    /* border: blue solid 1px; */
+}
+
+.section__container--one figure {
+    text-align: center;
+    /* margin-bottom: 2rem; */
+}
+
+.section__container--one {
+    padding: 2rem 6rem;
+    text-align: justify;
+    /* border: #ffffff solid 1px; */
+}
+
+.section__container--one {
+    text-align: center;
+}
+
+.section__container--two {
+    padding: 2rem;
+    display: grid;
+    column-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    /* border: #ffffff solid 1px; */
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.section__container--news {
+    /* padding: 2rem; */
+    display: grid;
+    column-gap: 25rem;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* border: #ffffff solid 1px; */
+    /* grid-template-rows: repeat(3, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/** ========== BOX MAIN ========== */
+
+.box__container--areaMain {
+    width: 15rem;
+    height: 37rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box__two--main::before,
+.box__two--main::after,
+.box__one--main::before,
+.box__one--main::after {
+    content: '';
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    -webkit-background-size: 800%;
+    background-size: 800%;
+    animation-duration: 4s;
+    background-position: 0 0;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50% -200px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .3), transparent);
+}
+
+.box__two--main {
+    transform: translateZ(0);
+    mix-blend-mode: screen;
+    transform: scale(0.8);
+}
+
+.box__one--main {
+    transform: translateZ(0);
+    position: relative;
+    top: 2rem;
+    left: 1.5rem;
+    bottom: 2rem;
+    transform: scale(0.7);
+}
+
+.box__one--main,
+.box__two--main {
+    perspective: 60rem;
+}
+
+.box__two--main::before,
+.box__one--main::before {
+    animation-name: animate1__main;
+}
+
+.box__two--main::after,
+.box__one--main::after {
+    animation-name: animate2__main;
+}
+
+.box__one--main::before,
+.box__one--main::after {
+    background: url(https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/one-direction-with-fans-7ar9saj1wpv9mkmb-7ar9saj1wpv9mkmb.jpg?alt=media&token=a7834667-2a11-439c-a814-50d441ddf8eb);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+}
+
+.borderTextHome {
+    padding: 1rem;
+    margin-top: 4rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0, 0 0 40px #0f0, 0 0 50px #0f0;
+}
+
+@keyframes animate1__main {
+    from {
+        transform: rotateY(0);
+        background-position: 0 0;
+    }
+    to {
+        transform: rotateY(-90deg);
+        background-position: -400% 0;
+    }
+}
+
+@keyframes animate2__main {
+    from {
+        transform: rotateY(90deg);
+        background-position: 400% 0;
+    }
+    to {
+        transform: rotateY(0);
+        background-position: 0 0;
+    }
+}
+
+/** ========== BOX MAIN TWO (NEWS ONE) ========== */
+
+.box__two2N--main::before,
+.box__two2N--main::after,
+.box__one2N--main::before,
+.box__one2N--main::after {
+    content: '';
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    -webkit-background-size: 800%;
+    background-size: 800%;
+    animation-duration: 4s;
+    background-position: 0 0;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50% -200px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .3), transparent);
+}
+
+.box__two2N--main {
+    transform: translateZ(0);
+    mix-blend-mode: screen;
+    transform: scale(0.8);
+}
+
+.box__one2N--main {
+    transform: translateZ(0);
+    position: relative;
+    top: 2rem;
+    left: 1.5rem;
+    bottom: 2rem;
+    transform: scale(0.7);
+}
+
+.box__one2N--main,
+.box__two2N--main {
+    perspective: 60rem;
+}
+
+.box__two2N--main::before,
+.box__one2N--main::before {
+    animation-name: animate1__main;
+}
+
+.box__two2N--main::after,
+.box__one2N--main::after {
+    animation-name: animate2__main;
+}
+
+.box__one2N--main::before,
+.box__one2N--main::after {
+    background: url(https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/EWfEI8TWoAMrXRe.jpg?alt=media&token=fa2bcecb-d493-495b-bbbc-7be24d6b0b2c);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+}
+
+/** ========== BOX MAIN THREE (NEWS TWO) ========== */
+
+.box__two3N--main::before,
+.box__two3N--main::after,
+.box__one3N--main::before,
+.box__one3N--main::after {
+    content: '';
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    -webkit-background-size: 800%;
+    background-size: 800%;
+    animation-duration: 4s;
+    background-position: 0 0;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50% -200px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .3), transparent);
+}
+
+.box__two3N--main {
+    transform: translateZ(0);
+    mix-blend-mode: screen;
+    transform: scale(0.8);
+}
+
+.box__one3N--main {
+    transform: translateZ(0);
+    position: relative;
+    top: 2rem;
+    left: 1.5rem;
+    bottom: 2rem;
+    transform: scale(0.7);
+}
+
+.box__one3N--main,
+.box__two3N--main {
+    perspective: 60rem;
+}
+
+.box__two3N--main::before,
+.box__one3N--main::before {
+    animation-name: animate1__main;
+}
+
+.box__two3N--main::after,
+.box__one3N--main::after {
+    animation-name: animate2__main;
+}
+
+.box__one3N--main::before,
+.box__one3N--main::after {
+    background: url(https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/MFYzjH1BOe0G7okKcZ5fG1.webp?alt=media&token=52b31832-a6aa-45a3-9f39-ca9d93527948);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+}
+/** ========== BOX MAIN FOUR (NEWS THREE) ========== */
+
+.box__two4N--main::before,
+.box__two4N--main::after,
+.box__one4N--main::before,
+.box__one4N--main::after {
+    content: '';
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    -webkit-background-size: 800%;
+    background-size: 800%;
+    animation-duration: 4s;
+    background-position: 0 0;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50% -200px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .3), transparent);
+}
+
+.box__two4N--main {
+    transform: translateZ(0);
+    mix-blend-mode: screen;
+    transform: scale(0.8);
+}
+
+.box__one4N--main {
+    transform: translateZ(0);
+    position: relative;
+    top: 2rem;
+    left: 1.5rem;
+    bottom: 2rem;
+    transform: scale(0.7);
+}
+
+.box__one4N--main,
+.box__two4N--main {
+    perspective: 60rem;
+}
+
+.box__two4N--main::before,
+.box__one4N--main::before {
+    animation-name: animate1__main;
+}
+
+.box__two4N--main::after,
+.box__one4N--main::after {
+    animation-name: animate2__main;
+}
+
+.box__one4N--main::before,
+.box__one4N--main::after {
+    background: url(https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/000242640W.jpg?alt=media&token=1be6134d-ab0a-4298-9d8e-655560888541);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+}
+
+/** ========== BOXES LAYOUT ========== */
+
+.box__container--area {
+    width: 15rem;
+    height: 15rem;
+    line-height: 10rem;
+}
+
+
+/** ========== BOX #1 ========== */
+
+.box__two::before,
+.box__two::after,
+.box__one::before,
+.box__one::after {
+    content: '';
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    -webkit-background-size: 800%;
+    background-size: 800%;
+    animation-duration: 4s;
+    background-position: 0 0;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50% -200px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .3), transparent);
+}
+
+.box__two {
+    transform: translateZ(0);
+    mix-blend-mode: screen;
+    transform: scale(0.4);
+}
+
+.box__one {
+    transform: translateZ(0);
+    position: relative;
+    top: 2rem;
+    transform: scale(0.3);
+}
+
+.box__one,
+.box__two {
+    perspective: 60rem;
+}
+
+.box__two::before,
+.box__one::before {
+    animation-name: animate1;
+}
+
+.box__two::after,
+.box__one::after {
+    animation-name: animate2;
+}
+
+.box__one::before,
+.box__one::after {
+    background: url(https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/LiamPayneSixImage.png?alt=media&token=9f6591cf-f163-40c8-af29-aade494e3967);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+}
+
+@keyframes animate1 {
+    from {
+        transform: rotateY(0);
+        background-position: 0 0;
+    }
+    to {
+        transform: rotateY(-90deg);
+        background-position: -400% 0;
+    }
+}
+
+@keyframes animate2 {
+    from {
+        transform: rotateY(90deg);
+        background-position: 400% 0;
+    }
+    to {
+        transform: rotateY(0);
+        background-position: 0 0;
+    }
+}
+
+
+/** ========== BOX #2 ========== */
+
+.box__four::before,
+.box__four::after,
+.box__three::before,
+.box__three::after {
+    content: '';
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    -webkit-background-size: 800%;
+    background-size: 800%;
+    animation-duration: 4s;
+    background-position: 0 0;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50% -200px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .3), transparent);
+}
+
+.box__four {
+    transform: translateZ(0);
+    mix-blend-mode: screen;
+    transform: scale(0.4);
+}
+
+.box__three {
+    transform: translateZ(0);
+    position: relative;
+    top: 2rem;
+    transform: scale(0.3);
+}
+
+.box__three,
+.box__four {
+    perspective: 60rem;
+}
+
+.box__four::before,
+.box__three::before {
+    animation-name: animate3;
+}
+
+.box__four::after,
+.box__three::after {
+    animation-name: animate4;
+}
+
+.box__three::before,
+.box__three::after {
+    background: url(https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/LouisTomlinsonThreeImage.webp?alt=media&token=85e80db9-805c-45ca-9d72-f7a6e7a55a15);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+}
+
+@keyframes animate3 {
+    from {
+        transform: rotateY(0);
+        background-position: 0 0;
+    }
+    to {
+        transform: rotateY(-90deg);
+        background-position: -400% 0;
+    }
+}
+
+@keyframes animate4 {
+    from {
+        transform: rotateY(90deg);
+        background-position: 400% 0;
+    }
+    to {
+        transform: rotateY(0);
+        background-position: 0 0;
+    }
+}
+
+
+/** ========== BOX #3 ========== */
+
+.box__six::before,
+.box__six::after,
+.box__five::before,
+.box__five::after {
+    content: '';
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    -webkit-background-size: 800%;
+    background-size: 800%;
+    animation-duration: 4s;
+    background-position: 0 0;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50% -200px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .3), transparent);
+}
+
+.box__six {
+    transform: translateZ(0);
+    mix-blend-mode: screen;
+    transform: scale(0.4);
+}
+
+.box__five {
+    transform: translateZ(0);
+    position: relative;
+    top: 2rem;
+    transform: scale(0.3);
+}
+
+.box__five,
+.box__six {
+    perspective: 60rem;
+}
+
+.box__six::before,
+.box__five::before {
+    animation-name: animate5;
+}
+
+.box__six::after,
+.box__five::after {
+    animation-name: animate6;
+}
+
+.box__five::before,
+.box__five::after {
+    background: url(https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/NiallHoranFourImage.jpg?alt=media&token=489828df-0dae-4202-915e-e587a675e20e);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+}
+
+@keyframes animate5 {
+    from {
+        transform: rotateY(0);
+        background-position: 0 0;
+    }
+    to {
+        transform: rotateY(-90deg);
+        background-position: -400% 0;
+    }
+}
+
+@keyframes animate6 {
+    from {
+        transform: rotateY(90deg);
+        background-position: 400% 0;
+    }
+    to {
+        transform: rotateY(0);
+        background-position: 0 0;
+    }
+}
+
+
+/** ========== BOX #4 ========== */
+
+.box__eight::before,
+.box__eight::after,
+.box__seven::before,
+.box__seven::after {
+    content: '';
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    -webkit-background-size: 800%;
+    background-size: 800%;
+    animation-duration: 4s;
+    background-position: 0 0;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50% -200px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .3), transparent);
+}
+
+.box__eight {
+    transform: translateZ(0);
+    mix-blend-mode: screen;
+    transform: scale(0.4);
+}
+
+.box__seven {
+    transform: translateZ(0);
+    position: relative;
+    top: 2rem;
+    transform: scale(0.3);
+}
+
+.box__seven,
+.box__eight {
+    perspective: 60rem;
+}
+
+.box__eight::before,
+.box__seven::before {
+    animation-name: animate7;
+}
+
+.box__eight::after,
+.box__seven::after {
+    animation-name: animate8;
+}
+
+.box__seven::before,
+.box__seven::after {
+    background: url(https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/OneHarryImage.webp?alt=media&token=6ca35267-2fba-4930-8854-4c33015fba85);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+}
+
+@keyframes animate7 {
+    from {
+        transform: rotateY(0);
+        background-position: 0 0;
+    }
+    to {
+        transform: rotateY(-90deg);
+        background-position: -400% 0;
+    }
+}
+
+@keyframes animate8 {
+    from {
+        transform: rotateY(90deg);
+        background-position: 400% 0;
+    }
+    to {
+        transform: rotateY(0);
+        background-position: 0 0;
+    }
+}
+
+
+/** ========== BOX #5 ========== */
+
+.box__ten::before,
+.box__ten::after,
+.box__nine::before,
+.box__nine::after {
+    content: '';
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    -webkit-background-size: 800%;
+    background-size: 800%;
+    animation-duration: 4s;
+    background-position: 0 0;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50% -200px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .3), transparent);
+}
+
+.box__ten {
+    transform: translateZ(0);
+    mix-blend-mode: screen;
+    transform: scale(0.4);
+}
+
+.box__nine {
+    transform: translateZ(0);
+    position: relative;
+    top: 2rem;
+    transform: scale(0.3);
+}
+
+.box__nine,
+.box__ten {
+    perspective: 60rem;
+}
+
+.box__ten::before,
+.box__nine::before {
+    animation-name: animate9;
+}
+
+.box__ten::after,
+.box__nine::after {
+    animation-name: animate10;
+}
+
+.box__nine::before,
+.box__nine::after {
+    background: url(https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/ZaynWikiFiveImage.jpg?alt=media&token=fecc9f2b-7c30-460f-a0b3-e24aea32401e);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+}
+
+@keyframes animate9 {
+    from {
+        transform: rotateY(0);
+        background-position: 0 0;
+    }
+    to {
+        transform: rotateY(-90deg);
+        background-position: -400% 0;
+    }
+}
+
+@keyframes animate10 {
+    from {
+        transform: rotateY(90deg);
+        background-position: 400% 0;
+    }
+    to {
+        transform: rotateY(0);
+        background-position: 0 0;
+    }
+}
+
+
+/** ========== BOX #6 ========== */
+
+.box__twelve::before,
+.box__twelve::after,
+.box__eleven::before,
+.box__eleven::after {
+    content: '';
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    -webkit-background-size: 800%;
+    background-size: 800%;
+    animation-duration: 4s;
+    background-position: 0 0;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50% -200px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .3), transparent);
+}
+
+.box__twelve {
+    transform: translateZ(0);
+    mix-blend-mode: screen;
+    transform: scale(0.4);
+}
+
+.box__eleven {
+    transform: translateZ(0);
+    position: relative;
+    top: 2rem;
+    transform: scale(0.3);
+}
+
+.box__eleven,
+.box__twelve {
+    perspective: 60rem;
+}
+
+.box__twelve::before,
+.box__eleven::before {
+    animation-name: animate11;
+}
+
+.box__twelve::after,
+.box__eleven::after {
+    animation-name: animate12;
+}
+
+.box__eleven::before,
+.box__eleven::after {
+    background: url(https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/532cd5e6dd0f2d9ae132270ba49c0d24.jpg?alt=media&token=07c96ac9-ace8-44f8-9946-3fa2d4c324d6);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+}
+
+@keyframes animate11 {
+    from {
+        transform: rotateY(0);
+        background-position: 0 0;
+    }
+    to {
+        transform: rotateY(-90deg);
+        background-position: -400% 0;
+    }
+}
+
+@keyframes animate12 {
+    from {
+        transform: rotateY(90deg);
+        background-position: 400% 0;
+    }
+    to {
+        transform: rotateY(0);
+        background-position: 0 0;
+    }
+}
+
+
+/** ========== BOX #7 ========== */
+
+.box__14::before,
+.box__14::after,
+.box__13::before,
+.box__13::after {
+    content: '';
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    -webkit-background-size: 800%;
+    background-size: 800%;
+    animation-duration: 4s;
+    background-position: 0 0;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50% -200px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .3), transparent);
+}
+
+.box__14 {
+    transform: translateZ(0);
+    mix-blend-mode: screen;
+    transform: scale(0.4);
+}
+
+.box__13 {
+    transform: translateZ(0);
+    position: relative;
+    top: 2rem;
+    transform: scale(0.3);
+}
+
+.box__13,
+.box__14 {
+    perspective: 60rem;
+}
+
+.box__14::before,
+.box__13::before {
+    animation-name: animate13;
+}
+
+.box__14::after,
+.box__13::after {
+    animation-name: animate14;
+}
+
+.box__13::before,
+.box__13::after {
+    background: url(https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/oneDirectionGrupoOne.jpg?alt=media&token=30556801-ffcc-4079-b330-8780dc3c5ab9);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+}
+
+@keyframes animate13 {
+    from {
+        transform: rotateY(0);
+        background-position: 0 0;
+    }
+    to {
+        transform: rotateY(-90deg);
+        background-position: -400% 0;
+    }
+}
+
+@keyframes animate14 {
+    from {
+        transform: rotateY(90deg);
+        background-position: 400% 0;
+    }
+    to {
+        transform: rotateY(0);
+        background-position: 0 0;
+    }
+}
+
+
+/** ========== BOX #8 ========== */
+
+.box__16::before,
+.box__16::after,
+.box__15::before,
+.box__15::after {
+    content: '';
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    -webkit-background-size: 800%;
+    background-size: 800%;
+    animation-duration: 4s;
+    background-position: 0 0;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50% -200px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .3), transparent);
+}
+
+.box__16 {
+    transform: translateZ(0);
+    mix-blend-mode: screen;
+    transform: scale(0.4);
+}
+
+.box__15 {
+    transform: translateZ(0);
+    position: relative;
+    top: 2rem;
+    transform: scale(0.3);
+}
+
+.box__15,
+.box__16 {
+    perspective: 60rem;
+}
+
+.box__16::before,
+.box__15::before {
+    animation-name: animate15;
+}
+
+.box__16::after,
+.box__15::after {
+    animation-name: animate16;
+}
+
+.box__15::before,
+.box__15::after {
+    background: url('https://cdn.mos.cms.futurecdn.net/qsxSkCQ23sgJuKsoDykiQD.jpg');
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+}
+
+@keyframes animate15 {
+    from {
+        transform: rotateY(0);
+        background-position: 0 0;
+    }
+    to {
+        transform: rotateY(-90deg);
+        background-position: -400% 0;
+    }
+}
+
+@keyframes animate16 {
+    from {
+        transform: rotateY(90deg);
+        background-position: 400% 0;
+    }
+    to {
+        transform: rotateY(0);
+        background-position: 0 0;
+    }
+}
+
+
+/** ========== BOX #9 ========== */
+
+.box__18::before,
+.box__18::after,
+.box__17::before,
+.box__17::after {
+    content: '';
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    -webkit-background-size: 800%;
+    background-size: 800%;
+    animation-duration: 4s;
+    background-position: 0 0;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50% -200px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .3), transparent);
+}
+
+.box__18 {
+    transform: translateZ(0);
+    mix-blend-mode: screen;
+    transform: scale(0.4);
+}
+
+.box__17 {
+    transform: translateZ(0);
+    position: relative;
+    top: 2rem;
+    transform: scale(0.3);
+}
+
+.box__17,
+.box__18 {
+    perspective: 60rem;
+}
+
+.box__18::before,
+.box__17::before {
+    animation-name: animate17;
+}
+
+.box__18::after,
+.box__17::after {
+    animation-name: animate18;
+}
+
+.box__17::before,
+.box__17::after {
+    background: url('https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/oneDirectionGrupoTres.jpg?alt=media&token=a13f11ee-7f07-4d81-a8fc-933b8b9eb973');
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+}
+
+@keyframes animate17 {
+    from {
+        transform: rotateY(0);
+        background-position: 0 0;
+    }
+    to {
+        transform: rotateY(-90deg);
+        background-position: -400% 0;
+    }
+}
+
+@keyframes animate18 {
+    from {
+        transform: rotateY(90deg);
+        background-position: 400% 0;
+    }
+    to {
+        transform: rotateY(0);
+        background-position: 0 0;
+    }
 }
