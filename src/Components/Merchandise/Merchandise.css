@@ -48,6 +48,15 @@
     position: relative;
 }
 
+.button__card--product {
+    width: 100%;
+    padding: 0.5rem;
+    /* color: #ffffff; */
+    text-align: center;
+    border-radius: 1rem;
+    background-color: #0f0;
+}
+
 .box__two1--main::before,
 .box__two1--main::after,
 .box__one1--main::before,

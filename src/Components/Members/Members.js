@@ -59,9 +59,9 @@ export function Members() {
             <main className='container'>
                 <h1 className='text-center m-5'>Integrantes De La Banda</h1>
                 {
-                    membersBiography.map(function(member) {
+                    membersBiography.map(function(member, index) {
                         return(
-                            <>
+                            <div key={index}>
                                 {
                                     (member.id % 2 !== 0) ?
                                         <section className={member.sectionMemberImparImage}>
@@ -84,7 +84,7 @@ export function Members() {
                                             </figure>
                                         </section>
                                 }                   
-                            </>
+                            </div>
                         )
                     })
                 }

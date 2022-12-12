@@ -1,7 +1,17 @@
 import './Merchandise.css';
+import { useNavigate } from 'react-router-dom';
 
 export function Merchandise() {
     const title = "Productos De La Banda";
+
+    /* Activamos La Navegación Entre Componentes Cuando Se De Un Evento */
+    let componentsBetweenNavigation = useNavigate();
+
+    function eventReactDetected(selectedProduct) {
+        componentsBetweenNavigation('/store',{
+            state: {selectedProduct}
+        });
+    }
 
     let individualProduct = [
         {
@@ -90,9 +100,9 @@ export function Merchandise() {
             <main className="container">
                 <section className="section__container--two">
                     {
-                        individualProduct.map(function(product) {
+                        individualProduct.map(function(product, index) {
                             return(
-                                <div className={product['mainBoxArea']}>
+                                <div className={product['mainBoxArea']} key={index}>
                                     <div className={product['nameBoxOne']}></div>
                                     <div className={product['nameBoxTwo']}></div>
                                     <div className={product['nameBoxThreeText']}>
@@ -100,6 +110,11 @@ export function Merchandise() {
                                         <p>precio: {product['information']['price']}</p>
                                         <p>quantity: {product['information']['quantity']} Unidades</p>
                                         <p>available: {product['information']['available']}</p>
+                                        <button className='button__card--product' onClick={
+                                            function() {
+                                                eventReactDetected(product)
+                                            }
+                                        }>Ampliar</button>
                                     </div>
                                 </div>
                             )

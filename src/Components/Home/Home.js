@@ -74,14 +74,14 @@ export function Home() {
 
                 <section className="section__container--two">
                     {
-                        boxNames.map(function(boxName) {
+                        boxNames.map(function(boxName, index) {
                             return (
-                                <>
+                                <div key={index}>
                                     <figure className="box__container--area">
                                         <div className={boxName['boxNameOne']}></div>
                                         <div className={boxName['boxNameTwo']}></div>
                                     </figure>
-                                </>
+                                </div>
                             )
                         })
                     }
@@ -92,17 +92,17 @@ export function Home() {
 
             <article>
                 <h1>NOTICIAS</h1>
-                <section class="main__container container">
-                    <div class="section__container--news">
+                <section className="main__container container">
+                    <div className="section__container--news">
                         {
-                            mainBoxNames.map(function(mainBoxName) {
+                            mainBoxNames.map(function(mainBoxName, index) {
                                 return (
-                                    <>
+                                    <div key={index}>
                                         <figure className={mainBoxName["mainBoxName"]}>
                                             <div className={mainBoxName["mainBoxNameOne"]}></div>
                                             <div className={mainBoxName["mainBoxNameTwo"]}></div>
                                         </figure>
-                                    </>
+                                    </div>
                                 )
                             })
                         }
