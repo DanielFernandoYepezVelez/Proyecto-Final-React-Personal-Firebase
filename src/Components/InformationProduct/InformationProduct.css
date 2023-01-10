@@ -9,7 +9,7 @@
     box-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0, 0 0 40px #0f0, 0 0 50px #0f0;
 }
 
-/* ========= BOX PRODUCT ONE =========== */
+/** ========= BOX PRODUCT ONE =========== */
 
 .box__two1INFO--main::before,
 .box__two1INFO--main::after,
@@ -70,7 +70,7 @@
     background-position: center center;
 }
 
-/* ========= BOX PRODUCT TWO =========== */
+/** ========= BOX PRODUCT TWO =========== */
 
 .box__two2INFO--main::before,
 .box__two2INFO--main::after,
@@ -125,13 +125,13 @@
 
 .box__one2INFO--main::before,
 .box__one2INFO--main::after {
-    background: url(https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/productOne.jpg?alt=media&token=f3896047-a675-4515-a112-4f8caf443ad8);
+    background: url(https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/productThree.jpg?alt=media&token=593b1f68-0a2f-44c5-9b58-9facf1591971);
     background-size: cover;
     -webkit-background-size: cover;
     background-position: center center;
 }
 
-/* ========= BOX PRODUCT THREE =========== */
+/** ========= BOX PRODUCT THREE =========== */
 
 .box__two3INFO--main::before,
 .box__two3INFO--main::after,
@@ -186,13 +186,13 @@
 
 .box__one3INFO--main::before,
 .box__one3INFO--main::after {
-    background: url(https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/productOne.jpg?alt=media&token=f3896047-a675-4515-a112-4f8caf443ad8);
+    background: url(https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/productFour.jpg?alt=media&token=6b573806-5db1-4f58-bca0-5dcc79929bb8);
     background-size: cover;
     -webkit-background-size: cover;
     background-position: center center;
 }
 
-/* ========= BOX PRODUCT FOUR =========== */
+/** ========= BOX PRODUCT FOUR =========== */
 
 .box__two4INFO--main::before,
 .box__two4INFO--main::after,
@@ -247,13 +247,13 @@
 
 .box__one4INFO--main::before,
 .box__one4INFO--main::after {
-    background: url(https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/productOne.jpg?alt=media&token=f3896047-a675-4515-a112-4f8caf443ad8);
+    background: url(https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/productFive.jpg?alt=media&token=3ff8459e-26b6-4742-8188-519446a6612a);
     background-size: cover;
     -webkit-background-size: cover;
     background-position: center center;
 }
 
-/* ========= BOX PRODUCT FIVE =========== */
+/** ========= BOX PRODUCT FIVE =========== */
 
 .box__two5INFO--main::before,
 .box__two5INFO--main::after,
@@ -308,7 +308,68 @@
 
 .box__one5INFO--main::before,
 .box__one5INFO--main::after {
-    background: url(https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/productOne.jpg?alt=media&token=f3896047-a675-4515-a112-4f8caf443ad8);
+    background: url(https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/productSeven.jpg?alt=media&token=8bf935fa-383e-45d4-945f-24d0ff1870fc);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+}
+
+/** ========= BOX PRODUCT SIX =========== */
+
+.box__two6INFO--main::before,
+.box__two6INFO--main::after,
+.box__one6INFO--main::before,
+.box__one6INFO--main::after {
+    content: '';
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    -webkit-background-size: 800%;
+    background-size: 800%;
+    animation-duration: 4s;
+    background-position: 0 0;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50% -200px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .3), transparent);
+}
+
+.box__two6INFO--main {
+    transform: translateZ(0);
+    mix-blend-mode: screen;
+    transform: scale(0.8);
+}
+
+.box__one6INFO--main {
+    transform: translateZ(0);
+    position: relative;
+    top: 2rem;
+    left: 1.5rem;
+    bottom: 2rem;
+    transform: scale(0.7);
+}
+
+.box__one6INFO--main,
+.box__two6INFO--main {
+    perspective: 60rem;
+}
+
+.box__two6INFO--main::before,
+.box__one6INFO--main::before {
+    animation-name: animate1__main;
+}
+
+.box__two6INFO--main::after,
+.box__one6INFO--main::after {
+    animation-name: animate2__main;
+}
+
+.box__one6INFO--main::before,
+.box__one6INFO--main::after {
+    background: url(https://firebasestorage.googleapis.com/v0/b/reactpersonalspotifyapp.appspot.com/o/productSix.jpg?alt=media&token=92d184b2-0638-41a3-ae56-e0ae76be57be);
     background-size: cover;
     -webkit-background-size: cover;
     background-position: center center;

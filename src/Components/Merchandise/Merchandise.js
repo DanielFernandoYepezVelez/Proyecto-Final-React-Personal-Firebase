@@ -7,9 +7,9 @@ export function Merchandise() {
     /* Activamos La Navegación Entre Componentes Cuando Se De Un Evento */
     let componentsBetweenNavigation = useNavigate();
 
-    function eventReactDetected(selectedProduct) {
+    function eventReactDetected(selectedProduct, index) {
         componentsBetweenNavigation('/store',{
-            state: {selectedProduct}
+            state: {selectedProduct, index}
         });
     }
 
@@ -118,7 +118,7 @@ export function Merchandise() {
                                         <p>available: {product['information']['available']}</p>
                                         <button className='button__card--product' onClick={
                                             function() {
-                                                eventReactDetected(product)
+                                                eventReactDetected(product, index)
                                             }
                                         }>Ampliar</button>
                                     </div>
