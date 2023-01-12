@@ -1,5 +1,7 @@
-import './Merchandise.css';
 import { useNavigate } from 'react-router-dom';
+
+/* CSS */
+import './Merchandise.css';
 
 export function Merchandise() {
     const title = "Productos De La Banda";

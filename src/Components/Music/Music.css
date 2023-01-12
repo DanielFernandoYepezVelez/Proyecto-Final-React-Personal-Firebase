@@ -1,0 +1,13 @@
+.section__container--music {
+    padding: 2rem;
+    display: grid;
+    column-gap: 3rem;
+    row-gap: 8rem;
+    align-items: center;
+    justify-content: center;
+    /* border: #ffffff solid 1px; */
+    /* grid-template-rows: 1fr 1fr 1fr 0.2fr;
+    grid-template-columns: repeat(3, 1fr); */
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+}

@@ -1,5 +1,3 @@
-import { computeHeadingLevel } from "@testing-library/react";
-
 export async function topTracksService() {
 
     // 1. PA DONDE VAS Y A QUE VAS (URL Y ENDPOINT)
@@ -11,7 +9,7 @@ export async function topTracksService() {
     const requestTopTracks = {
         method: 'GET',
         headers: {
-            Authorization: 'Bearer BQAvQ5j0dmR27rNrl5MaQ0MV05STGq3vh810-pST2OdwGHGEFCBRZvqXDiVybRN9kiHj7JwdljjkZFK2WCmopjx1zXK8PA30uwMloh509oEnNYMWtp6v430coHd01wPCdhWJLfPFByW3SvinKDAlA4sD2G-9h_Gdrjtzy3wh7Hd6WhDRvbMCCn99-j35Sdo',
+            Authorization: 'Bearer BQACEMrx6Z5TQvPdDIhPi3lkpo0rqOeuZ2fEKmxBQmY9NF5hLcu88o4iCC1O1taHVPVRzYx2Mdl6ovXB0YRMStr6gy2XtDi7VzZdSoAfrfBAc0s154-rpacmRbvIG6LpZ3BAHXWfk0tJo1voWISUwCTUalXvp0__AIzKr3ItdK7-VCdulSMBFooxDZdIFbY',
         }
     };
 
@@ -19,5 +17,5 @@ export async function topTracksService() {
     let responseTopTracks = await fetch(URL, requestTopTracks); 
     let songs = await responseTopTracks.json();
 
-    console.log(songs);
+    return songs;
 }
