@@ -9,13 +9,13 @@ export async function topTracksService() {
     const requestTopTracks = {
         method: 'GET',
         headers: {
-            Authorization: 'Bearer BQACEMrx6Z5TQvPdDIhPi3lkpo0rqOeuZ2fEKmxBQmY9NF5hLcu88o4iCC1O1taHVPVRzYx2Mdl6ovXB0YRMStr6gy2XtDi7VzZdSoAfrfBAc0s154-rpacmRbvIG6LpZ3BAHXWfk0tJo1voWISUwCTUalXvp0__AIzKr3ItdK7-VCdulSMBFooxDZdIFbY',
+            Authorization: 'Bearer BQA42gjEqlItJ5vKzhbgIi5dWW-JPTTg3XqKK1jf2Pg9OI56Vr4n3gI55NIybcvnxbxJATK4TRy6ZedZd-hE6Sd3eylIX3bplbEWm0wcxn_rXupVZ4U7d-lr7MhK9S2IY9iTKTWRhUjBAlGRt-E9-Je4Q3dI-j6r2_h5MxSyYz_82gY7hvEg5J4lOyDKkjI',
         }
     };
 
     // 3. CONSUMIMOS LA API DE SPOTIFY
     let responseTopTracks = await fetch(URL, requestTopTracks); 
     let songs = await responseTopTracks.json();
-
+    
     return songs;
 }
