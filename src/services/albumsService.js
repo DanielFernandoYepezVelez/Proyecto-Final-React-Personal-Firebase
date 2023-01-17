@@ -1,4 +1,9 @@
+import { tokenService } from './tokenService';
+
 export async function AlbumsService() {
+
+    // Token
+    let token = await tokenService();
 
     // 1. PA DONDE VAS Y A QUE VAS (URL Y ENDPOINT)
     // ESCRIBIR LA URL DEL SERVICIO DEL API
@@ -9,7 +14,7 @@ export async function AlbumsService() {
     const requestAlbums = {
         method: 'GET',
         headers: {
-            Authorization: 'Bearer BQDO6YGpcmPpw1wnfaFIo_g0iM4zvMTUamYN4hMIAEvHALmhssf3TJt0G3Z_3RC7P8aUTLsqjrcL1MkRWcFKScpiX_rdd1UM_Pjrg-mPn6IyuWKydSZRe-839hAKg6KfrQzHZKEWopLNw98pTDMYbhW1RYwnuA8Pwyz24XpA1gPe_EyrGUWdZIpug2wMZA0',
+            Authorization: token,
         }
     };
 

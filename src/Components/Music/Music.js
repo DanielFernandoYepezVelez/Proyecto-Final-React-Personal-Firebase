@@ -55,7 +55,7 @@ export function Music() {
                                                         <audio controls src={song.preview_url}></audio>
                                                         <figure>
                                                             <img src="https://raw.githubusercontent.com/DanielFernandoYepezVelez/02-Proyecto-JavaScript-Venta-Cursos/master/public/assets/img/estrellas.png" alt="starts"></img>
-                                                            <p>{song.popularity}</p>
+                                                            <p>Popularidad: {song.popularity}</p>
                                                         </figure>
                                                         {/* <p>Popularidad {song.popularity}</p> */}
                                                     </div>
@@ -71,7 +71,7 @@ export function Music() {
                                                             <audio controls src={song.preview_url}></audio>
                                                             <figure>
                                                                 <img src="https://raw.githubusercontent.com/DanielFernandoYepezVelez/02-Proyecto-JavaScript-Venta-Cursos/master/public/assets/img/estrellas.png" alt="starts"></img>
-                                                                <p>{song.popularity}</p>
+                                                                <p>Popularidad: {song.popularity}</p>
                                                             </figure>
                                                         </div>
                                                     </div>
@@ -85,7 +85,7 @@ export function Music() {
                                                             <audio controls src={song.preview_url}></audio>
                                                             <figure>
                                                                 <img src="https://raw.githubusercontent.com/DanielFernandoYepezVelez/02-Proyecto-JavaScript-Venta-Cursos/master/public/assets/img/estrellas.png" alt="starts"></img>
-                                                                <p>{song.popularity}</p>
+                                                                <p>Popularidad: {song.popularity}</p>
                                                             </figure>
                                                         </div>
                                                     </div>
@@ -100,7 +100,7 @@ export function Music() {
                                                             <audio controls src={song.preview_url}></audio>
                                                             <figure>
                                                                 <img src="https://raw.githubusercontent.com/DanielFernandoYepezVelez/02-Proyecto-JavaScript-Venta-Cursos/master/public/assets/img/estrellas.png" alt="starts"></img>
-                                                                <p>{song.popularity}</p>
+                                                                <p>Popularidad: {song.popularity}</p>
                                                             </figure>
                                                         </div>
                                                     </div>    
@@ -115,7 +115,7 @@ export function Music() {
                                                             <audio controls src={song.preview_url}></audio>
                                                             <figure>
                                                                 <img src="https://raw.githubusercontent.com/DanielFernandoYepezVelez/02-Proyecto-JavaScript-Venta-Cursos/master/public/assets/img/estrellas.png" alt="starts"></img>
-                                                                <p>{song.popularity}</p>
+                                                                <p>Popularidad: {song.popularity}</p>
                                                             </figure>
                                                         </div>
                                                     </div>
@@ -130,7 +130,7 @@ export function Music() {
                                                                 <audio controls src={song.preview_url}></audio>
                                                                 <figure>
                                                                     <img src="https://raw.githubusercontent.com/DanielFernandoYepezVelez/02-Proyecto-JavaScript-Venta-Cursos/master/public/assets/img/estrellas.png" alt="starts"></img>
-                                                                    <p>{song.popularity}</p>
+                                                                    <p>Popularidad: {song.popularity}</p>
                                                                 </figure>
                                                             </div>
                                                         </div>
@@ -144,7 +144,7 @@ export function Music() {
                                                                 <audio controls src={song.preview_url}></audio>
                                                                 <figure>
                                                                     <img src="https://raw.githubusercontent.com/DanielFernandoYepezVelez/02-Proyecto-JavaScript-Venta-Cursos/master/public/assets/img/estrellas.png" alt="starts"></img>
-                                                                    <p>{song.popularity}</p>
+                                                                    <p>Popularidad: {song.popularity}</p>
                                                                 </figure>
                                                             </div>
                                                         </div>
@@ -159,7 +159,7 @@ export function Music() {
                                                             <audio controls src={song.preview_url}></audio>
                                                             <figure>
                                                                 <img src="https://raw.githubusercontent.com/DanielFernandoYepezVelez/02-Proyecto-JavaScript-Venta-Cursos/master/public/assets/img/estrellas.png" alt="starts"></img>
-                                                                <p>{song.popularity}</p>
+                                                                <p>Popularidad: {song.popularity}</p>
                                                             </figure>
                                                         </div>
                                                     </div>    
@@ -174,7 +174,7 @@ export function Music() {
                                                                 <audio controls src={song.preview_url}></audio>
                                                                 <figure>
                                                                     <img src="https://raw.githubusercontent.com/DanielFernandoYepezVelez/02-Proyecto-JavaScript-Venta-Cursos/master/public/assets/img/estrellas.png" alt="starts"></img>
-                                                                    <p>{song.popularity}</p>
+                                                                    <p>Popularidad: {song.popularity}</p>
                                                                 </figure>
                                                             </div>
                                                         </div>
@@ -188,7 +188,7 @@ export function Music() {
                                                                 <audio controls src={song.preview_url}></audio>
                                                                 <figure>
                                                                     <img src="https://raw.githubusercontent.com/DanielFernandoYepezVelez/02-Proyecto-JavaScript-Venta-Cursos/master/public/assets/img/estrellas.png" alt="starts"></img>
-                                                                    <p>{song.popularity}</p>
+                                                                    <p>Popularidad: {song.popularity}</p>
                                                                 </figure>
                                                             </div>
                                                         </div>
