@@ -1,5 +1,5 @@
 /* Hooks, Funciones Especiales De React */
-/* useState => Me Permite Manejar El Estado */
+/* useState => Me Permite Manejar El Estado Del Componente De Forma Local */
 /* useEffect => Me Ayuda A Parar O Limitar El Consumo De Un API O Lo Que Se Requiera Limitar */
 import { useState, useEffect } from "react";
 
@@ -12,12 +12,12 @@ import './Music.css';
 export function Music() {
     const title = "Musica De La Banda";
 
-    /* Para Manejar El Estado De Mi Componente De Forma Global*/
+    /* Para Manejar El Estado De Mi Componente De Forma Global Dentro Del Componente Únicamente */
     /* Usando El Hook useState Para Utilizar La Respuesta De La API De Forma Global Solo En El Mismo Componente */
     const[songs, setSongs] = useState(null);
     const[stateLoad, setStateLoad] = useState(true);
 
-    /* Usando El Hook useEffect Para Limitar El Consumo De La API A Una Sola Vez, Para  */
+    /* Usando El Hook useEffect Para Limitar El Consumo De La API A Una Sola Vez */
     useEffect(function() {
         topTracksService()
         .then(function(response) {
@@ -26,8 +26,6 @@ export function Music() {
         })
         .catch(error => console.log(error));
     },[]);
-
-    console.log(songs);
 
     /* Render Del Componente */
     if (stateLoad) {
@@ -207,12 +205,3 @@ export function Music() {
         );
     }
 }
-
-
-
-{/* <div className="text-center">
-                                         
-                                        <h1>{song.name}</h1>
-                                        <audio controls src={song.preview_url}></audio>
-                                        <p>Popularidad {song.popularity}</p>
-                                    </div> */}

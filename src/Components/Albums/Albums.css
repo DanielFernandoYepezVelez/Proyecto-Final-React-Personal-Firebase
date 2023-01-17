@@ -1,0 +1,630 @@
+.section__container--albums {
+    padding: 2rem;
+    display: grid;
+    column-gap: 3rem;
+    row-gap: 8rem;
+    align-items: center;
+    justify-content: center;
+    /* border: #ffffff solid 1px; */
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.box__containerA--areaMain1 {
+    width: 15rem;
+    height: 37rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box__containerA--textPosition1 {
+    top: 40rem;
+    left: 14rem;
+    width: 32rem;
+    padding: 1rem;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0, 0 0 40px #0f0, 0 0 50px #0f0;
+}
+
+.box__containerA--areaMain2 {
+    left: 1rem;
+    top: 26rem;
+    width: 15rem;
+    height: 37rem;
+    padding: 1rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box__containerA--textPosition2 {
+    top: 35rem;
+    left: 14rem;
+    width: 32rem;
+    margin: 6rem;
+    padding: 1rem;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0, 0 0 40px #0f0, 0 0 50px #0f0;
+}
+
+.box__containerA--areaMain3 {
+    left: 2rem;
+    top: 54rem;
+    width: 15rem;
+    height: 37rem;
+    padding: 1rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box__containerA--textPosition3 {
+    top: 35rem;
+    left: 14rem;
+    width: 32rem;
+    margin: 6rem;
+    padding: 1rem;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0, 0 0 40px #0f0, 0 0 50px #0f0;
+}
+
+/** ========== BOX MAIN ALBUM ONE ========== */
+
+.box__twoA1--main::before,
+.box__twoA1--main::after,
+.box__oneA1--main::before,
+.box__oneA1--main::after {
+    content: '';
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    -webkit-background-size: 800%;
+    background-size: 800%;
+    animation-duration: 4s;
+    background-position: 0 0;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50% -200px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .3), transparent);
+}
+
+.box__twoA1--main {
+    transform: translateZ(0);
+    mix-blend-mode: screen;
+    transform: scale(0.8);
+}
+
+.box__oneA1--main {
+    transform: translateZ(0);
+    position: relative;
+    top: 2rem;
+    left: 1.5rem;
+    bottom: 2rem;
+    transform: scale(0.7);
+}
+
+.box__oneA1--main,
+.box__twoA1--main {
+    perspective: 60rem;
+}
+
+.box__twoA1--main::before,
+.box__oneA1--main::before {
+    animation-name: animate1__main;
+}
+
+.box__twoA1--main::after,
+.box__oneA1--main::after {
+    animation-name: animate2__main;
+}
+
+.box__oneA1--main::before,
+.box__oneA1--main::after {
+    background: url(https://i.scdn.co/image/ab67616d0000b273241e4fe75732c9c4b49b94c3);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+}
+
+/** ========== BOX MAIN ALBUM TWO ========== */
+
+.box__twoA2--main::before,
+.box__twoA2--main::after,
+.box__oneA2--main::before,
+.box__oneA2--main::after {
+    content: '';
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    -webkit-background-size: 800%;
+    background-size: 800%;
+    animation-duration: 4s;
+    background-position: 0 0;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50% -200px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .3), transparent);
+}
+
+.box__twoA2--main {
+    transform: translateZ(0);
+    mix-blend-mode: screen;
+    transform: scale(0.8);
+}
+
+.box__oneA2--main {
+    transform: translateZ(0);
+    position: relative;
+    top: 2rem;
+    left: 1.5rem;
+    bottom: 2rem;
+    transform: scale(0.7);
+}
+
+.box__oneA2--main,
+.box__twoA2--main {
+    perspective: 60rem;
+}
+
+.box__twoA2--main::before,
+.box__oneA2--main::before {
+    animation-name: animate1__main;
+}
+
+.box__twoA2--main::after,
+.box__oneA2--main::after {
+    animation-name: animate2__main;
+}
+
+.box__oneA2--main::before,
+.box__oneA2--main::after {
+    background: url(https://i.scdn.co/image/ab67616d0000b273d304ba2d71de306812eebaf4);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+}
+
+/** ========== BOX MAIN ALBUM THREE ========== */
+
+.box__twoA3--main::before,
+.box__twoA3--main::after,
+.box__oneA3--main::before,
+.box__oneA3--main::after {
+    content: '';
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    -webkit-background-size: 800%;
+    background-size: 800%;
+    animation-duration: 4s;
+    background-position: 0 0;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50% -200px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .3), transparent);
+}
+
+.box__twoA3--main {
+    transform: translateZ(0);
+    mix-blend-mode: screen;
+    transform: scale(0.8);
+}
+
+.box__oneA3--main {
+    transform: translateZ(0);
+    position: relative;
+    top: 2rem;
+    left: 1.5rem;
+    bottom: 2rem;
+    transform: scale(0.7);
+}
+
+.box__oneA3--main,
+.box__twoA3--main {
+    perspective: 60rem;
+}
+
+.box__twoA3--main::before,
+.box__oneA3--main::before {
+    animation-name: animate1__main;
+}
+
+.box__twoA3--main::after,
+.box__oneA3--main::after {
+    animation-name: animate2__main;
+}
+
+.box__oneA3--main::before,
+.box__oneA3--main::after {
+    background: url(https://i.scdn.co/image/ab67616d0000b2732f76b797c382bedcafdf45e1);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+}
+
+/** ========== BOX MAIN ALBUM FOUR ========== */
+
+.box__twoA4--main::before,
+.box__twoA4--main::after,
+.box__oneA4--main::before,
+.box__oneA4--main::after {
+    content: '';
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    -webkit-background-size: 800%;
+    background-size: 800%;
+    animation-duration: 4s;
+    background-position: 0 0;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50% -200px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .3), transparent);
+}
+
+.box__twoA4--main {
+    transform: translateZ(0);
+    mix-blend-mode: screen;
+    transform: scale(0.8);
+}
+
+.box__oneA4--main {
+    transform: translateZ(0);
+    position: relative;
+    top: 2rem;
+    left: 1.5rem;
+    /* left: 1.rem; */
+    bottom: 2rem;
+    transform: scale(0.7);
+}
+
+.box__oneA4--main,
+.box__twoA4--main {
+    perspective: 60rem;
+}
+
+.box__twoA4--main::before,
+.box__oneA4--main::before {
+    animation-name: animate1__main;
+}
+
+.box__twoA4--main::after,
+.box__oneA4--main::after {
+    animation-name: animate2__main;
+}
+
+.box__oneA4--main::before,
+.box__oneA4--main::after {
+    background: url(https://i.scdn.co/image/ab67616d0000b2734e31e0d38b89b8fb239d4fbf);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+}
+
+/** ========== BOX MAIN ALBUM FIVE ========== */
+
+.box__twoA5--main::before,
+.box__twoA5--main::after,
+.box__oneA5--main::before,
+.box__oneA5--main::after {
+    content: '';
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    -webkit-background-size: 800%;
+    background-size: 800%;
+    animation-duration: 4s;
+    background-position: 0 0;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50% -200px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .3), transparent);
+}
+
+.box__twoA5--main {
+    transform: translateZ(0);
+    mix-blend-mode: screen;
+    transform: scale(0.8);
+}
+
+.box__oneA5--main {
+    transform: translateZ(0);
+    position: relative;
+    top: 2rem;
+    left: 1.5rem;
+    /* left: 1.rem; */
+    bottom: 2rem;
+    transform: scale(0.7);
+}
+
+.box__oneA5--main,
+.box__twoA5--main {
+    perspective: 60rem;
+}
+
+.box__twoA5--main::before,
+.box__oneA5--main::before {
+    animation-name: animate1__main;
+}
+
+.box__twoA5--main::after,
+.box__oneA5--main::after {
+    animation-name: animate2__main;
+}
+
+.box__oneA5--main::before,
+.box__oneA5--main::after {
+    background: url(https://i.scdn.co/image/ab67616d0000b2734a5584795dc73860653a9a3e);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+}
+
+/** ========== BOX MAIN ALBUM SIX ========== */
+
+.box__twoA6--main::before,
+.box__twoA6--main::after,
+.box__oneA6--main::before,
+.box__oneA6--main::after {
+    content: '';
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    -webkit-background-size: 800%;
+    background-size: 800%;
+    animation-duration: 4s;
+    background-position: 0 0;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50% -200px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .3), transparent);
+}
+
+.box__twoA6--main {
+    transform: translateZ(0);
+    mix-blend-mode: screen;
+    transform: scale(0.8);
+}
+
+.box__oneA6--main {
+    transform: translateZ(0);
+    position: relative;
+    top: 2rem;
+    left: 1.5rem;
+    /* left: 1.rem; */
+    bottom: 2rem;
+    transform: scale(0.7);
+}
+
+.box__oneA6--main,
+.box__twoA6--main {
+    perspective: 60rem;
+}
+
+.box__twoA6--main::before,
+.box__oneA6--main::before {
+    animation-name: animate1__main;
+}
+
+.box__twoA6--main::after,
+.box__oneA6--main::after {
+    animation-name: animate2__main;
+}
+
+.box__oneA6--main::before,
+.box__oneA6--main::after {
+    background: url(https://i.scdn.co/image/ab67616d0000b273b6d363532842f726f7fcde53);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+}
+
+/** ========== BOX MAIN ALBUM SEVEN ========== */
+
+.box__twoA7--main::before,
+.box__twoA7--main::after,
+.box__oneA7--main::before,
+.box__oneA7--main::after {
+    content: '';
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    -webkit-background-size: 800%;
+    background-size: 800%;
+    animation-duration: 4s;
+    background-position: 0 0;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50% -200px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .3), transparent);
+}
+
+.box__twoA7--main {
+    transform: translateZ(0);
+    mix-blend-mode: screen;
+    transform: scale(0.8);
+}
+
+.box__oneA7--main {
+    transform: translateZ(0);
+    position: relative;
+    top: 2rem;
+    left: 1.5rem;
+    /* left: 1.rem; */
+    bottom: 2rem;
+    transform: scale(0.7);
+}
+
+.box__oneA7--main,
+.box__twoA7--main {
+    perspective: 60rem;
+}
+
+.box__twoA7--main::before,
+.box__oneA7--main::before {
+    animation-name: animate1__main;
+}
+
+.box__twoA7--main::after,
+.box__oneA7--main::after {
+    animation-name: animate2__main;
+}
+
+.box__oneA7--main::before,
+.box__oneA7--main::after {
+    background: url(https://i.scdn.co/image/ab67616d0000b273de2c37047c30834c562030da);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+}
+
+/** ========== BOX MAIN ALBUM EIGHT ========== */
+
+.box__twoA8--main::before,
+.box__twoA8--main::after,
+.box__oneA8--main::before,
+.box__oneA8--main::after {
+    content: '';
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    -webkit-background-size: 800%;
+    background-size: 800%;
+    animation-duration: 4s;
+    background-position: 0 0;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50% -200px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .3), transparent);
+}
+
+.box__twoA8--main {
+    transform: translateZ(0);
+    mix-blend-mode: screen;
+    transform: scale(0.8);
+}
+
+.box__oneA8--main {
+    transform: translateZ(0);
+    position: relative;
+    top: 2rem;
+    left: 1.5rem;
+    /* left: 1.rem; */
+    bottom: 2rem;
+    transform: scale(0.7);
+}
+
+.box__oneA8--main,
+.box__twoA8--main {
+    perspective: 60rem;
+}
+
+.box__twoA8--main::before,
+.box__oneA8--main::before {
+    animation-name: animate1__main;
+}
+
+.box__twoA8--main::after,
+.box__oneA8--main::after {
+    animation-name: animate2__main;
+}
+
+.box__oneA8--main::before,
+.box__oneA8--main::after {
+    background: url(https://i.scdn.co/image/ab67616d0000b2732288e51936a9fdde73d22904);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+}
+
+/** ========== BOX MAIN ALBUM NINE ========== */
+
+.box__twoA9--main::before,
+.box__twoA9--main::after,
+.box__oneA9--main::before,
+.box__oneA9--main::after {
+    content: '';
+    display: block;
+    width: 40rem;
+    height: 40rem;
+    position: absolute;
+    -webkit-background-size: 800%;
+    background-size: 800%;
+    animation-duration: 4s;
+    background-position: 0 0;
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50% -200px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, .3), transparent);
+}
+
+.box__twoA9--main {
+    transform: translateZ(0);
+    mix-blend-mode: screen;
+    transform: scale(0.8);
+}
+
+.box__oneA9--main {
+    transform: translateZ(0);
+    position: relative;
+    top: 2rem;
+    left: 1.5rem;
+    /* left: 1.rem; */
+    bottom: 2rem;
+    transform: scale(0.7);
+}
+
+.box__oneA9--main,
+.box__twoA9--main {
+    perspective: 60rem;
+}
+
+.box__twoA9--main::before,
+.box__oneA9--main::before {
+    animation-name: animate1__main;
+}
+
+.box__twoA9--main::after,
+.box__oneA9--main::after {
+    animation-name: animate2__main;
+}
+
+.box__oneA9--main::before,
+.box__oneA9--main::after {
+    background: url(https://i.scdn.co/image/ab67616d0000b2737db6a91139a0ba99110d07d1);
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center center;
+}

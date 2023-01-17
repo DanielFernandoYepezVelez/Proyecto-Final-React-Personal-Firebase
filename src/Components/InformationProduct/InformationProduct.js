@@ -47,7 +47,7 @@ export function InformationProduct() {
                             }
                         </div>
                         <Link to="/merchandise">
-                            <input type="button" className='btn btn-outline-primary' value="Regresar" />
+                            <input type="button" className='button__card--product2' value="Regresar" />
                         </Link>
                         {/* <img className='img-fluid w-100' src={product['information']['photo']} alt='imageProduct'/> */}
                     </div>
